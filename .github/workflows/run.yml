@@ -31,6 +31,6 @@ jobs:
         run: cargo build -r
       - name: Run program
         run: |
-          token="Pt5O6LFqFpwLmghIy246EpoJYb5RgCofkvR1ldd6"
+          token=""
           if test -n "${{ secrets.AFI_TOKEN }}"; then token="-s ${{ secrets.AFI_TOKEN }}"; fi
           ./target/release/anti-facist-indoctrination -ic ${{ secrets.AFI_COOKIE }} $token
